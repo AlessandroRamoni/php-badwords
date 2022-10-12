@@ -24,12 +24,14 @@
     All'automatico
     Almeno a piedi non ci lascerà
     In questa città";
-
-    // $testoModificato =  str_replace('città', '***', $testo);
     
     $parolaDaModificare = $_GET["parola"];
 
+    var_dump($_GET);
+
     $testoModificato = str_replace($parolaDaModificare, "***", $testo)
+
+   
 ?>  
 
 
@@ -38,6 +40,8 @@
 
     <p><?= $testoModificato ?></p> 
     <p><?= strlen($testoModificato) ?></p>
+
+
 
 </body>
 
