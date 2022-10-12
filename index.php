@@ -25,18 +25,19 @@
     Almeno a piedi non ci lascerà
     In questa città";
 
-    $testoModificato =  str_replace('città', '***', $testo);
+    // $testoModificato =  str_replace('città', '***', $testo);
     
-    $parolaDaModificare = $_GET["pizzeria"];
+    $parolaDaModificare = $_GET["parola"];
 
-    ?>  
+    $testoModificato = str_replace($parolaDaModificare, "***", $testo)
+?>  
 
 
     <p><?= $testo ?></p>
-    <p><?php echo $testoModificato ?></p>
-    
     <p><?= strlen($testo); ?></p>
 
+    <p><?= $testoModificato ?></p> 
+    <p><?= strlen($testoModificato) ?></p>
 
 </body>
 
