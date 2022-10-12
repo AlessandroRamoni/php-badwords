@@ -10,15 +10,6 @@
 
 <body>
 <?php
-    $testo = "holaaaaaaaa"
-    ?>
-
-    <h1>
-      <?php echo $testo ?>
-      hermosa
-    </h1>
-
-    <?php
     $testo = "Ne parlavamo tanto tanti anni fa
     Di quanto è paranoica questa città
     Della sua gente, delle sue manie
@@ -32,8 +23,21 @@
     Fermati un attimo
     All'automatico
     Almeno a piedi non ci lascerà
-    In questa città"
-    ?>
+    In questa città";
+
+    $testoModificato =  str_replace('città', '***', $testo);
+    
+    $parolaDaModificare = $_GET["pizzeria"];
+
+    ?>  
+
+
+    <p><?= $testo ?></p>
+    <p><?php echo $testoModificato ?></p>
+    
+    <p><?= strlen($testo); ?></p>
+
+
 </body>
 
 </html>
